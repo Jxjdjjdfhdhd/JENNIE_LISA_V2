@@ -68,7 +68,7 @@ class Config(object):
     else:
         LOG_GROUP = None
 
-    ADMIN = os.environ.get("ADMINS", "1815494853")
+    ADMIN = os.environ.get("ADMINS", "")
 
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     
